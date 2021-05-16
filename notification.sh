@@ -7,6 +7,8 @@
 # https://github.com/dennisb1/edgerouter-load-balancing-notification
 #
 # Don't forget to give a donation if this script is helpful for you.
+# You can find the information here:
+# https://github.com/dennisb1/edgerouter-load-balancing-notification
 #
 # Place the script in the path above.  I have my ownerships and
 # permissions set to
