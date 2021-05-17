@@ -1,7 +1,7 @@
 #!/bin/bash
 # /config/scripts/notification.sh
 #
-# Version 0.1
+# Version 0.2
 #
 # Up to date script can be found here:
 # https://github.com/dennisb1/edgerouter-load-balancing-notification
@@ -29,6 +29,14 @@
 # where "group G" is whatever you designated your load-balance group is
 #
 # Configure:
+#
+# Do you want to keep a logfile on the Edgerouter? 1=enabled 0=disabled
+#
+LOGFILE=1
+#
+# Location of the file (you can keep it default)
+#
+MYLOGFILE="/var/log/failover"
 #
 # Do you want a mail? 1=enabled 0=disabled
 #
@@ -78,6 +86,8 @@ Interface: $INTF, Group: $GROUP, Status: $STATUS"
 
 telegrammsg="ALERT: Internet Connection on $INTF status $STATUS"
 
+logmsg="ALERT: Internet Connection on $INTF status $STATUS"
+
 if [ $MAIL = "1" ]
 then
   curl -s smtps://$MAILSERVER --ssl-reqd \
@@ -90,4 +100,10 @@ fi
 if [ $TELEGRAM = "1" ]
 then
   curl -s -X POST https://api.telegram.org/bot$TELEGRAMTOKEN/sendMessage -d chat_id=$TELEGRAMID -d text="$telegrammsg"
+fi
+
+if [ $LOGFILE = "1" ]
+then
+	echo $logmsg >> $MYLOGFILE
+	logger $logmsg
 fi
