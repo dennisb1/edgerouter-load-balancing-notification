@@ -3,6 +3,11 @@ Get a notification when the load balancer changes
 
 For example when a WAN interface is going offline and the failover is activated. 
 
+It is sending a message to:
+- Mail
+- Telegram
+- Logfile
+
 It has been tested on:
 - EdgeRouter 12p
 - EdgeRouter SFP X
