@@ -17,3 +17,8 @@ You can donate to:
 
 Bitcoin:  
 Ethereum: 
+
+
+Thanks to the following people to make a contribution (not limited to):
+- SEMIJim
+- smyers119
