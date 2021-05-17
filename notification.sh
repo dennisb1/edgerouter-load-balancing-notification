@@ -107,3 +107,5 @@ then
 	echo $logmsg >> $MYLOGFILE
 	logger $logmsg
 fi
+
+exit
