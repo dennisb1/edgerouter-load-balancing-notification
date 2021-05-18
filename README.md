@@ -20,8 +20,8 @@ https://github.com/dennisb1/edgerouter-load-balancing-notification/blob/main/not
 Please consider to make a donation for the work and effort put in this usefull script.
 You can donate to:
 
-Bitcoin:  13RJEUDVheyjhMLgjBY7v7j9hHgQyyD5Ey
-Ethereum: 0x03464D632180c589DB23638Ec3b867aeacd3e8C6
+- Bitcoin:  13RJEUDVheyjhMLgjBY7v7j9hHgQyyD5Ey
+- Ethereum: 0x03464D632180c589DB23638Ec3b867aeacd3e8C6
 
 
 Thanks to the following people to make a contribution (not limited to):
