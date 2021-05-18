@@ -99,7 +99,9 @@ fi
 
 if [ $TELEGRAM = "1" ]
 then
-  curl -s -X POST https://api.telegram.org/bot$TELEGRAMTOKEN/sendMessage -d chat_id=$TELEGRAMID -d text="$telegrammsg"
+  curl -s -X POST https://api.telegram.org/bot$TELEGRAMTOKEN/sendMessage \
+  -d chat_id=$TELEGRAMID \
+  -d text="$telegrammsg"
 fi
 
 if [ $LOGFILE = "1" ]
