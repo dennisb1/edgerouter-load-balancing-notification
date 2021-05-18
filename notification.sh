@@ -63,6 +63,10 @@ TELEGRAM=1
 TELEGRAMTOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 TELEGRAMID="xxxxxxxxxxxxxx"
 #
+# Change the following rule to 0 (this is a safety measure to be sure you have done everything above).
+# if you dont the script wont work
+#
+CHANGEME=1
 #
 # NO CHANGES NEEDED BELOW THIS POINT
 #
@@ -87,6 +91,12 @@ Interface: $INTF, Group: $GROUP, Status: $STATUS"
 telegrammsg="ALERT: Internet Connection on $INTF status $STATUS"
 
 logmsg="ALERT: Internet Connection on $INTF status $STATUS"
+
+if [ $CHANGEME = "1" ]
+then
+  echo "You really have forgot to read the manual. The script wont work then."
+  exit 0
+fi
 
 if [ $MAIL = "1" ]
 then
