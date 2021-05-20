@@ -116,7 +116,7 @@ fi
 
 if [ $LOGFILE = "1" ]
 then
-	touch -c $MYLOGFILE
+	touch $MYLOGFILE
 	echo $logmsg >> $MYLOGFILE
 	logger $logmsg
 fi
