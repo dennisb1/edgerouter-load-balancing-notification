@@ -95,7 +95,7 @@ logmsg="ALERT: Internet Connection on $INTF status $STATUS"
 if [ $CHANGEME = "1" ]
 then
   echo "You really have forgot to read the manual. The script wont work then."
-  exit 0
+  exit 1
 fi
 
 if [ $MAIL = "1" ]
