@@ -17,6 +17,10 @@ It should work on any Ubiquiti device as long as it supports a load balancing fu
 The manual can be found on top of the script where the setup and configuration part is available:
 https://github.com/dennisb1/edgerouter-load-balancing-notification/blob/main/notification.sh
 
+You can test the script with the following command from the commandline:
+
+  /config/scripts/notification.sh G eth0 inactive
+
 Please consider to make a donation for the work and effort put in this usefull script.
 You can donate to:
 
